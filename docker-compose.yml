@@ -44,12 +44,12 @@ services:
         https_proxy:
         no_proxy:
         socks_proxy:
-        TF_ANNOTATION: "no"
-        AUTO_SEGMENTATION: "no"
+        TF_ANNOTATION: "yes"
+        AUTO_SEGMENTATION: "yes"
         USER: "django"
         DJANGO_CONFIGURATION: "production"
         TZ: "Etc/UTC"
-        OPENVINO_TOOLKIT: "no"
+        OPENVINO_TOOLKIT: "yes"
     environment:
       DJANGO_MODWSGI_EXTRA_ARGS: ""
       ALLOWED_HOSTS: '*'
