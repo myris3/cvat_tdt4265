@@ -49,8 +49,8 @@ function TopBarComponent(props: VisibleTopBarProps & RouteComponentProps): JSX.E
                     lg={{ span: 9 }}
                     xl={{ span: 8 }}
                     xxl={{ span: 7 }}
-                >
-                    <Button
+                >{/* Uncoment this to reactivate the create tasks button (remove encapsulating braces)
+                     <Button
                         size='large'
                         id='cvat-create-task-button'
                         type='primary'
@@ -60,6 +60,7 @@ function TopBarComponent(props: VisibleTopBarProps & RouteComponentProps): JSX.E
                     >
                          Create new task
                     </Button>
+		*/}	
                 </Col>
             </Row>
         </>

@@ -128,6 +128,7 @@ rules.add_perm('engine.role.admin', has_admin_role)
 rules.add_perm('engine.role.annotator', has_annotator_role)
 rules.add_perm('engine.role.observer', has_observer_role)
 
+#Original permissions for project-create
 #rules.add_perm('engine.project.create', has_admin_role | has_user_role)
 rules.add_perm('enine.project.create', has_admin_role)
 
@@ -137,6 +138,7 @@ rules.add_perm('engine.project.change', has_admin_role | is_project_owner |
     is_project_assignee)
 rules.add_perm('engine.project.delete', has_admin_role | is_project_owner)
 
+#Original permissions for task create
 #rules.add_perm('engine.task.create', has_admin_role | has_user_role)
 rules.add_perm('engine.task.create', has_admin_role)
 
@@ -144,8 +146,8 @@ rules.add_perm('engine.task.create', has_admin_role)
 rules.add_perm('engine.task.access', has_admin_role | has_observer_role |
     is_task_owner | is_task_annotator)
 
-#rules.add_perm('engine.task.change', has_admin_role | is_task_owner |
-#    is_task_assignee)
+#Original permissions for task_change
+#rules.add_perm('engine.task.change', has_admin_role | is_task_owner | is_task_assignee)
 rules.add_perm('engine.task.change', has_admin_role | is_task_owner |
     is_task_assignee | is_task_annotator)
 
@@ -153,8 +155,6 @@ rules.add_perm('engine.task.delete', has_admin_role | is_task_owner)
 
 rules.add_perm('engine.job.access', has_admin_role | has_observer_role |
     is_job_owner | is_job_annotator)
-#rules.add_perm('engine.job.change', has_admin_role | is_job_owner |
-#    is_job_annotator)
 
 rules.add_perm('engine.job.change', has_admin_role)
 
@@ -227,8 +227,9 @@ def filter_task_queryset(queryset, user):
     if has_admin_role(user) or has_observer_role(user):
         return queryset
     else:
-        return queryset.filter(Q(owner=user) | Q(assignee=user) |
-            Q(segment__job__assignee=user) | Q(assignee=None)).distinct()
+        return queryset.filter(Q(assignee=user) | Q(assignee=None)).distinct()
+        #Original queryset, a tad broader access than what is needed, above is more restrictive
+        #return queryset.filter(Q(owner=user) | Q(assignee=user) | Q(segment__job__assignee=user) | Q(assignee=None)).distinct()
 
 class TaskGetQuerySetMixin(object):
     def get_queryset(self):

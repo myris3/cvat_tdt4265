@@ -118,31 +118,31 @@ export default function ActionsMenuComponent(props: Props): JSX.Element {
             className='cvat-actions-menu'
             onClick={onClickMenuWrapper}
         >
-            {
-            //    DumpSubmenu({
-            //        taskMode,
-            //        dumpers,
-            //        dumpActivities,
-            //        menuKey: Actions.DUMP_TASK_ANNO,
-            //    })
+            {/* Remove encapsulating braces and slashes-dashes to enable the load/dump/export buttons on each task
+                DumpSubmenu({
+                    taskMode,
+                    dumpers,
+                    dumpActivities,
+                    menuKey: Actions.DUMP_TASK_ANNO,
+                })
             }
             {
-            //    LoadSubmenu({
-            //        loaders,
-            //        loadActivity,
-            //        onFileUpload: (file: File): void => {
-            //            onClickMenuWrapper(null, file);
-            //        },
-            //        menuKey: Actions.LOAD_TASK_ANNO,
-            //    })
+                LoadSubmenu({
+                    loaders,
+                    loadActivity,
+                    onFileUpload: (file: File): void => {
+                        onClickMenuWrapper(null, file);
+                    },
+                    menuKey: Actions.LOAD_TASK_ANNO,
+                })
             }
             {
-            //    ExportSubmenu({
-            //        exporters,
-            //        exportActivities,
-            //        menuKey: Actions.EXPORT_TASK_DATASET,
-            //    })
-            }
+                ExportSubmenu({
+                    exporters,
+                    exportActivities,
+                    menuKey: Actions.EXPORT_TASK_DATASET,
+                })
+            */}
             {!!bugTracker && <Menu.Item key={Actions.OPEN_BUG_TRACKER}>Open bug tracker</Menu.Item>}
             {
                 renderModelRunner

@@ -214,7 +214,7 @@
                 let response = null;
                 try {
                     response = await Axios.get(`${backendAPI}/tasks?page_size=10&${filter}`, {
-                        proxy: config.proxy,
+                        proxy: config.proxy
                     });
                 } catch (errorData) {
                     throw generateError(errorData);
