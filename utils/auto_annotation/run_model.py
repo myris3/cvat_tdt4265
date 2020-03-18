@@ -69,12 +69,12 @@ def _get_docker_files(model_name: str, task_id: int):
     import django
     django.setup()
 
-    from cvat.apps.auto_annotation.models import AnnotationModel
+    #from cvat.apps.auto_annotation.models import AnnotationModel
     from cvat.apps.engine.models import Task as TaskModel
 
     task = TaskModel(pk=task_id)
     model = AnnotationModel.objects.get(name=model_name)
-
+    
     images_dir = task.get_data_dirname()
 
     py_file = model.interpretation_file.name
