@@ -1,0 +1,122 @@
+[
+  {
+    "name": "road",
+    "attributes": []
+  },
+  {
+    "name": "sidewalk",
+    "attributes": []
+  },
+  {
+    "name": "parking",
+    "attributes": []
+  },
+  {
+    "name": "rail track",
+    "attributes": []
+  },
+  {
+    "name": "person",
+    "attributes": []
+  },
+  {
+    "name": "rider",
+    "attributes": []
+  },
+  {
+    "name": "car",
+    "attributes": []
+  },
+  {
+    "name": "truck",
+    "attributes": []
+  },
+  {
+    "name": "bus",
+    "attributes": []
+  },
+  {
+    "name": "on rails",
+    "attributes": []
+  },
+  {
+    "name": "motorcycle",
+    "attributes": []
+  },
+  {
+    "name": "bicycle",
+    "attributes": []
+  },
+  {
+    "name": "caravan",
+    "attributes": []
+  },
+  {
+    "name": "trailer",
+    "attributes": []
+  },
+  {
+    "name": "building",
+    "attributes": []
+  },
+  {
+    "name": "wall",
+    "attributes": []
+  },
+  {
+    "name": "fence",
+    "attributes": []
+  },
+  {
+    "name": "guard rail",
+    "attributes": []
+  },
+  {
+    "name": "bridge",
+    "attributes": []
+  },
+  {
+    "name": "tunnel",
+    "attributes": []
+  },
+  {
+    "name": "pole",
+    "attributes": []
+  },
+  {
+    "name": "pole group",
+    "attributes": []
+  },
+  {
+    "name": "traffic sign",
+    "attributes": []
+  },
+  {
+    "name": "traffic light",
+    "attributes": []
+  },
+  {
+    "name": "vegetation",
+    "attributes": []
+  },
+  {
+    "name": "terrain",
+    "attributes": []
+  },
+  {
+    "name": "sky",
+    "attributes": []
+  },
+  {
+    "name": "ground",
+    "attributes": []
+  },
+  {
+    "name": "dynamic",
+    "attributes": []
+  },
+  {
+    "name": "static",
+    "attributes": []
+  }
+]

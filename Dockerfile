@@ -125,8 +125,11 @@ COPY cvat/ ${HOME}/cvat
 COPY cvat-core/ ${HOME}/cvat-core
 COPY tests ${HOME}/tests
 COPY datumaro/ ${HOME}/datumaro
+COPY scripts/ ${HOME}/scripts
 
 RUN python3 -m pip install --no-cache-dir -r ${HOME}/datumaro/requirements.txt
+RUN python3 -m pip install --no-cache-dir django_extensions
+
 
 # Binary option is necessary to correctly apply the patch on Windows platform.
 # https://unix.stackexchange.com/questions/239364/how-to-fix-hunk-1-failed-at-1-different-line-endings-message

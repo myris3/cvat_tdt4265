@@ -63,7 +63,8 @@ def find_min_y(array):
     return array[index]
 
 def _get_docker_files(model_name: str, task_id: int):
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'cvat.settings.development'
+    #os.environ['DJANGO_SETTINGS_MODULE'] = 'cvat.settings.development'
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'cvat.settings.production'
 
     import django
     django.setup()

@@ -92,7 +92,8 @@ export default function AnnotationMenuComponent(props: Props): JSX.Element {
 
     return (
         <Menu onClick={onClickMenuWrapper} className='cvat-annotation-menu' selectable={false}>
-            {
+	    {
+		
                 DumpSubmenu({
                     taskMode,
                     dumpers,
@@ -118,10 +119,11 @@ export default function AnnotationMenuComponent(props: Props): JSX.Element {
                 })
             }
 
-            <Menu.Item key={Actions.REMOVE_ANNO}>
+            
+	    <Menu.Item key={Actions.REMOVE_ANNO}>
                 Remove annotations
             </Menu.Item>
-            <Menu.Item key={Actions.OPEN_TASK}>
+	    <Menu.Item key={Actions.OPEN_TASK}>
                 Open the task
             </Menu.Item>
         </Menu>
