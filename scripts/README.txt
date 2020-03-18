@@ -1,5 +1,6 @@
 Run docker_create_users.sh to create users from the list of user emails in emails.txt.
-
+Rebuild the cvat container before running docker_create_users.sh, as it realies on running some python scripts from within the container while it's running.
+ 
 Run python create_tasks.py <video_dir> <admin_username> <admin_pwd> to automatically generate the tasks for the client.
 
 Run create_superuser.sh to create a superuser for cvat.
