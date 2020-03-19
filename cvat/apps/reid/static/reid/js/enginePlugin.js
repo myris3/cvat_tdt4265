@@ -109,10 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const reidCancelButtonId = 'reidCancelReID';
     const reidOverlay = 'reidOverlay';
 
-    //$('<button> Run ReID Merge </button>').on('click', () => {
-    //    $('#annotationMenu').addClass('hidden');
-    //    $(`#${reidWindowId}`).removeClass('hidden');
-    //}).addClass('menuButton semiBold h2').prependTo(buttonsUI);
+    $('<button> Run ReID Merge </button>').on('click', () => {
+        $('#annotationMenu').addClass('hidden');
+        $(`#${reidWindowId}`).removeClass('hidden');
+    }).addClass('menuButton semiBold h2').prependTo(buttonsUI);
 
     $(`
         <div class="modal hidden" id="${reidWindowId}">
