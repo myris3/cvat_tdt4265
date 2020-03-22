@@ -38,13 +38,13 @@ All tasks come preprocessed with some annotations already in place, but it is yo
 
 You will now be able to create a new bounding box by clicking on the frame shown on the canvas. ![Start creating by clicking the canvas](./walkthrough_images/canvas_shape_part1.png), ![Cover the shape with the square by moving the cursor](./walkthrough_images/canvas_shape_part2.png), ![then click to create the box](./walkthrough_images/canvas_shape_part3.png).
 
-Make sure to select the correct class in the dropdown menu below the "create new shape button", 
-and try to experiment with the difference between interpolation and annotation drop down options. 
+Make sure to select the correct class in the dropdown menu below the "create new shape button", and try to experiment with the difference between interpolation and annotation drop down options. 
 If you create annotation squares, try to experiment with the shortcut "ctrl+b", which propogates the current bounding box a set amount of frames forwards in time. This can save time if the object in question does not move much relative to the frame. To delete a bounding box, click the bounding box in question and hit the delete button.
 
 
 # Task complete
-When you complete all frames in the task, mark the task as ![complete](./walkthrough_images/canvas_completed.png), and assign yourself another task from the task list. 
+When you complete all frames in the task, mark the task as completed and assign yourself another task from the task list.
+![complete](./walkthrough_images/canvas_completed.png),  
 
 Remember to save your work, either from the menu in the bottom left, or hit ctrl+s.
 
