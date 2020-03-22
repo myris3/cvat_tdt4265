@@ -54,7 +54,7 @@ Then click to create the box.
 
 Make sure to select the correct class in the dropdown menu below the "create shape button", and try to experiment with the difference between interpolation and annotation drop down options. 
 
-If you create annotation squares, try to experiment with the shortcut "ctrl+b", which propogates the current bounding box a set amount of frames forwards in time. This can save time if the object in question does not move much relative to the frame. To delete a bounding box, click the bounding box in question and hit the delete button.
+If you create annotation squares, try to experiment with the shortcut ctrl+b, which propogates the current bounding box a set amount of frames forwards in time. This can save time if the object in question does not move much relative to the frame. To delete a bounding box, click the bounding box in question and hit the delete button.
 
 Before you start, it may be easier to run the ReID function, found in the menu in the bottom right, to try to connect similar bounding boxes to the same class instance, as the auto-annotation algorithm has made no effort to do so.
 
