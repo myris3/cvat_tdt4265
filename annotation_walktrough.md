@@ -1,14 +1,16 @@
 # Login
 Open the link to the annotation web server, and log in with your provided username and password.
+
 https://tdt4265-annotering.idi.ntnu.no/
 ![Login Page](./walkthrough_images/login_edit.png)
 
 # Open task
-Open one of the available tasks visible in the task list by clickong the blue open button.
+Open one of the available tasks visible in the task list by clicking the blue open button.
 ![Select a task](./walkthrough_images/tasks_edit.png)
 
 # Change assignee
 From the highlighted drop-down menu, assign the task to your username. This will hide the task from other annotators. Then click the circeled job text to start annotation.
+
 ![Assign yourself the task](./walkthrough_images/task_assignee_edit.png)
 
 # Used labels
@@ -34,7 +36,9 @@ The video file will be browsable on the canvas as shown in the image below. ![An
 
 Normal playback of the video can be started and paused with the spacebar, and for a frame by frame view, the D and F keys can be used to skip forwards or backwards, frame by frame. The canvas itself can be moved by clicking and dragging, and using the mouse wheel to zoom in and out.
 
-All tasks come preprocessed with some annotations already in place, but it is your job to complete the task of annotating all relevant classes in every frame of the video,and correct the existing bounding boxes. The bounding boxes already there can be adjusted by clicking and dragging the box corners, and new bounding boxes can be made by clicking the "create new shape" button in the lower right corner. ![Create new shapes](./walkthrough_images/create_shape.png) 
+All tasks come preprocessed with some annotations already in place, but it is your job to complete the task of annotating all relevant classes in every frame of the video, and correct the existing bounding boxes. The bounding boxes already there can be adjusted by clicking and dragging the box corners, and new bounding boxes can be made by clicking the "create new shape" button in the lower right corner.
+
+![Create new shapes](./walkthrough_images/create_shape.png) 
 
 You will now be able to create a new bounding box by clicking on the frame shown on the canvas. ![Start creating by clicking the canvas](./walkthrough_images/canvas_shape_part1.png), ![Cover the shape with the square by moving the cursor](./walkthrough_images/canvas_shape_part2.png), ![then click to create the box](./walkthrough_images/canvas_shape_part3.png).
 
